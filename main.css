@@ -1,0 +1,277 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #222;
+}
+
+/* Container */
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+/* ================= NAVBAR ================= */
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #0d2d66;
+  z-index: 100;
+  height: 100px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+}
+.nav-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.logo {
+  color: white;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.logo span {
+  font-size: 40px;
+}
+
+.menu {
+  display: flex;
+  gap: 40px;
+}
+
+.menu a {
+  color: white;
+  font-weight: bold;
+}
+.search-icon {
+  color: white;
+  font-size: 20px;
+}
+
+/* ================= BREAKING NEWS ================= */
+
+.breaking-news {
+  position: sticky;
+  top: 90px;
+  z-index: 90;
+  background: red;
+  color: white;
+  text-align: center;
+  padding: 14px;
+  font-weight: bold;
+  margin-top: 70px;
+}
+
+/* ================= MAIN CONTENT ================= */
+
+.main-content {
+  padding-top: 40px;
+}
+
+/* ================= NEWS GRID ================= */
+
+.news-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.big-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.big-card img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  display: block;
+}
+
+.card-content {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  color: white;
+  z-index: 2;
+}
+
+.card-content h2 {
+  font-size: 38px;
+  margin-bottom: 10px;
+}
+
+.new-badge {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: orange;
+  color: white;
+  padding: 10px 15px;
+  font-weight: bold;
+  border-radius: 5px;
+  z-index: 5;
+}
+
+/* ================= SMALL CARDS ================= */
+
+.small-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
+
+.small-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.small-card img {
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.35);
+  z-index: 1;
+}
+
+.small-content {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  right: 15px;
+  color: white;
+  font-weight: bold;
+  z-index: 2;
+  line-height: 1.5;
+}
+
+/* ================= TOPIC TITLE ================= */
+
+.topic-title {
+  position: sticky;
+  top: 120px;
+  z-index: 80;
+  background: #ffd000;
+  width: fit-content;
+  padding: 15px 30px;
+  margin-top: 50px;
+  margin-bottom: 30px;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+/* ================= LAYER SECTION ================= */
+
+.layer-section {
+  position: relative;
+  height: 500px;
+  overflow: hidden;
+  border-radius: 15px;
+  margin-bottom: 60px;
+}
+
+.layer-section img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.dark-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  z-index: 1;
+}
+
+.middle-box {
+  position: absolute;
+  width: 400px;
+  height: 120px;
+  border: 2px solid rgba(255, 255, 255, 0.7);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+
+.layer-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 42px;
+  font-weight: bold;
+  z-index: 3;
+}
+
+.icon-layer {
+  position: absolute;
+  top: 42%;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+  font-size: 60px;
+  z-index: 4;
+}
+
+/* ================= LOREM ================= */
+
+.lorem-section {
+  line-height: 2;
+  font-size: 18px;
+  padding-bottom: 200px;
+}
+
+.lorem-section h2 {
+  margin-bottom: 20px;
+}
+
+.lorem-section p {
+  margin-bottom: 20px;
+}
+
+/* ================= SCROLL TOP ================= */
+
+.scroll-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 60px;
+  height: 60px;
+  background: #0d2d66;
+  color: white;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  font-size: 22px;
+  z-index: 110;
+  transition: 0.3s;
+}
+
+.scroll-top:hover {
+  background: #ff9900;
+}
